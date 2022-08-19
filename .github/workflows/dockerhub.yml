@@ -21,7 +21,7 @@ jobs:
         with:
           images: joshloecker/test_madrid_ci
           tags: |
-            type=raw,pattern=${{ github.GITHUB_REF }}
+            type=raw,value=${{ github.GITHUB_REF }}
             type=raw,value=latest
 
       -
