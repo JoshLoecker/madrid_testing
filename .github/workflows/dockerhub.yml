@@ -24,11 +24,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{raw}}
             type=semver,pattern={{major}}.{{minor}}-{{branch}}
-#  Create a vX.Y release on docker
-# This is useful to accept all patch changes, but not minor revisions
-#            type=match,pattern=v\d+\.\d+(?=\.\d+-\w+)
             type=raw,value=latest
-# type=semver,pattern={{version}}
 
       -
         name: Login to DockerHub
