@@ -20,7 +20,7 @@ jobs:
         with:
           images: joshloecker/test_madrid_ci
           tags: |
-            type=semver,suffic={{base_ref}},pattern=v{{major}}-
+            type=semver,pattern={{major}}.{{minor}}
             type=raw,value=latest
 
       -
