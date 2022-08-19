@@ -24,8 +24,8 @@ jobs:
           tags: |
             type=ref,event=branch
             type=ref,event=pr
-            type=raw,pattern={{branch}}-{{major}}.{{minor}}
-            type=raw,pattern={{branch}}-{{major}}.{{minor}}.{{patch}}
+            type=semver,pattern={{raw}}
+            type=semver,pattern={{raw}}
 # type=semver,pattern={{version}}
 
       -
