@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - '*'
+      - 'v*.*.*'
 
 jobs:
   docker:
@@ -21,7 +21,7 @@ jobs:
         with:
           images: joshloecker/test_madrid_ci
           tags: |
-            type=raw,value=${GITHUB_REF}
+            type=raw,value=${{ github.ref_name }}
             type=raw,value=latest
 
       -
