@@ -2,6 +2,7 @@ name: ci
 
 # Run on any tag creation
 on:
+  workflow_dispatch:
   push:
     tags:
       - '*'
