@@ -1,14 +1,7 @@
 name: ci
 
-env:
-  MAJOR_VERSION: 0
-  MINOR_VERSION: 1
-  PATCH_VERSION: 0
-
 on:
   push:
-    branches:
-      - 'master'
     tags:
       - 'v*'
   pull_request:
@@ -27,8 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: |
-            joshloecker/test_madrid_ci
+          images: joshloecker/test_madrid_ci
           tags: |
             type=ref,event=branch
             type=ref,event=pr
