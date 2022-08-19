@@ -23,7 +23,7 @@ jobs:
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{raw}}
-            type=raw,pattern=latest
+            type=raw,value=latest
 # type=semver,pattern={{version}}
 
       -
