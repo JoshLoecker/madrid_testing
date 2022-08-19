@@ -20,7 +20,7 @@ jobs:
         with:
           images: joshloecker/test_madrid_ci
           tags: |
-            type=semver,pattern={{major}}.{{minor}}-${{GITHUB_REF}}
+            type=semver,pattern={{ major }}.{{ minor }}-${{ github.GITHUB_REF }}
             type=raw,value=latest
 
       -
