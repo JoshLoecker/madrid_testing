@@ -23,6 +23,7 @@ jobs:
           tags: |
             type=match,pattern=^\w+-\d+\.\d+
             type=ref,event=tag
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }}
 #            type=match,pattern=(v\d\.\d)(?:\.\d+)(-\w+),group=1
 #            type=raw,value=latest
 
