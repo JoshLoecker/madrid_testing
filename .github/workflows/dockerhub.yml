@@ -21,7 +21,8 @@ jobs:
         with:
           images: joshloecker/test_madrid_ci
           tags: |
-            type=match,pattern=(v\d\.\d)(?:\.\d+)(-\w+),group=1
+            type=match,pattern=^\w+-\d+\.\d+
+#            type=match,pattern=(v\d\.\d)(?:\.\d+)(-\w+),group=1
 #            type=raw,value=latest
 
       -
