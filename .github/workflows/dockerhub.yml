@@ -22,7 +22,7 @@ jobs:
           images: joshloecker/test_madrid_ci
           tags: |
             type=match,pattern=(v\d\.\d)(?:\.\d+)(-\w+),group=1
-            type=raw,value=latest
+#            type=raw,value=latest
 
       -
         name: Login to DockerHub
